@@ -4,14 +4,14 @@ import bank_logo from "../../assets/images/bank_logo.svg";
 import { corPrimaria } from "../UI/variables";
 
 const BtnCabecalho = styled.a`
-text-align: center;
-border-radius: 3px;
-padding: 5px 20px;
-margin: 0 10px;
-font-weight: 600;
-border: 2px solid white;
-background: ${(props) => (props.primary ? "white" : corPrimaria)};
-color: ${(props) => (props.primary ? corPrimaria : "white")};
+  text-align: center;
+  border-radius: 3px;
+  padding: 5px 20px;
+  margin: 0 10px;
+  font-weight: 600;
+  border: 2px solid white;
+  background: ${(props) => (props.primary ? "white" : corPrimaria)};
+  color: ${(props) => (props.primary ? corPrimaria : "white")};
 `;
 
 const StyledHeader = styled.nav`
@@ -36,9 +36,7 @@ const Cabecalho = () => {
         <BtnCabecalho primary href="https://google.com">
           Ajuda
         </BtnCabecalho>
-        <BtnCabecalho href="https://google.com">
-          Sair
-        </BtnCabecalho>
+        <BtnCabecalho href="https://google.com">Sair</BtnCabecalho>
       </div>
     </StyledHeader>
   );
